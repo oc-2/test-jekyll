@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    labels:
+      - "dependencies"
+      - "ruby"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    labels:
+      - "github actions"
+      - "dependencies"
+    schedule:
+      interval: "daily"
